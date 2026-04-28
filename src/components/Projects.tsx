@@ -3,6 +3,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import { RainbowButton } from "@/components/ui/rainbow-button";
+import { TextAnimate } from "@/components/ui/text-animate";
 
 // Project Data with Media & Layout Configuration
 const projects = [
@@ -148,9 +149,9 @@ export default function Projects() {
           <h2 className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight">
             Selected <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-purple-400">Works</span>
           </h2>
-          <p className="text-gray-400 text-lg max-w-2xl leading-relaxed">
-             Real projects, real problems solved — from idea to deployment, here's what I've been working on.
-          </p>
+          <TextAnimate animation="blurInUp" by="word" duration={1.2} className="text-gray-400 text-lg max-w-2xl leading-relaxed">
+            {"Real projects, real problems solved — from idea to deployment, here's what I've been working on."}
+          </TextAnimate>
         </motion.div>
 
         {/* Bento Grid Layout */}

@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { TextAnimate } from "@/components/ui/text-animate";
 
 const TESTIMONIALS = [
   {
@@ -59,9 +60,9 @@ export default function Testimonials() {
             >
                 Kind <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-purple-400">Words</span>
             </motion.h2>
-            <p className="text-gray-400 text-lg max-w-xl mx-auto mb-10 leading-relaxed">
-                Feedback from clients and collaborators I've had the pleasure of working with.
-            </p>
+            <TextAnimate animation="blurInUp" by="word" duration={1.2} className="text-gray-400 text-lg max-w-xl mx-auto mb-10 leading-relaxed">
+              {"Feedback from clients and collaborators I've had the pleasure of working with."}
+            </TextAnimate>
             
 
        </div>

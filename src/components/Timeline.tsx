@@ -2,6 +2,7 @@
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
+import { TextAnimate } from "@/components/ui/text-animate";
 
 const TIMELINE_DATA = [
   {
@@ -63,10 +64,9 @@ export default function Timeline() {
           <h2 className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight">
              My <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-purple-400">Journey</span>
           </h2>
-          <p className="text-gray-400 text-lg max-w-2xl mx-auto leading-relaxed">
-            From writing my first "Hello World" to building complex applications. 
-            Here is a glimpse into my professional evolution.
-          </p>
+          <TextAnimate animation="blurInUp" by="word" duration={1.2} className="text-gray-400 text-lg max-w-2xl mx-auto leading-relaxed">
+            {'From writing my first "Hello World" to building complex applications. Here is a glimpse into my professional evolution.'}
+          </TextAnimate>
         </motion.div>
 
         <div ref={containerRef} className="relative max-w-4xl mx-auto">

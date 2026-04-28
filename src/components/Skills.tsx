@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { RainbowButton } from "@/components/ui/rainbow-button";
 
 const skills = [
   { category: "Frontend", items: ["React", "HTML", "CSS", "JavaScript", "Tailwind CSS", "Bootstrap"] },
@@ -44,12 +45,12 @@ export default function Skills() {
               <h3 className="text-2xl font-bold text-blue-300 mb-6 uppercase tracking-wider">{group.category}</h3>
               <div className="flex flex-wrap gap-3">
                 {group.items.map((skill, sIdx) => (
-                  <span
+                  <RainbowButton
                     key={sIdx}
-                    className="px-4 py-2 bg-black/40 rounded-full text-sm text-gray-300 border border-white/10 hover:border-white/30 hover:text-white transition-all cursor-default"
+                    className="!flex-none !px-4 !py-2 !text-sm !rounded-full !font-medium cursor-default pointer-events-none"
                   >
                     {skill}
-                  </span>
+                  </RainbowButton>
                 ))}
               </div>
             </motion.div>

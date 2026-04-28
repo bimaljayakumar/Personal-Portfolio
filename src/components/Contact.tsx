@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { TextAnimate } from "@/components/ui/text-animate";
 
 export default function Contact() {
   const [formState, setFormState] = useState({
@@ -39,10 +40,9 @@ export default function Contact() {
                 together.
               </span>
             </h2>
-            <p className="text-gray-400 text-lg mb-10 max-w-md leading-relaxed">
-              I'm currently available for freelance projects and open to full-time opportunities.
-              If you have a project that needs some creative touch, I'd love to hear about it.
-            </p>
+            <TextAnimate animation="blurInUp" by="word" duration={1.2} className="text-gray-400 text-lg mb-10 max-w-md leading-relaxed">
+              {"I'm currently available for freelance projects and open to full-time opportunities. If you have a project that needs some creative touch, I'd love to hear about it."}
+            </TextAnimate>
 
             <div className="flex flex-col gap-6 mb-12">
               <a href="mailto:bimaljayakumar18@gmail.com" className="flex items-center gap-4 text-gray-300 hover:text-white transition-colors group">
