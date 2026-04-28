@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { RainbowButton } from "@/components/ui/rainbow-button";
+import { TextAnimate } from "@/components/ui/text-animate";
 
 const skills = [
   { category: "Frontend", items: ["React", "HTML", "CSS", "JavaScript", "Tailwind CSS", "Bootstrap"] },
@@ -28,9 +29,9 @@ export default function Skills() {
           <h2 className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight">
             Technical <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-purple-400">Arsenal</span>
           </h2>
-          <p className="text-gray-400 text-lg max-w-2xl leading-relaxed">
-            A practical stack I've used to build real projects — from web apps to Android apps.
-          </p>
+          <TextAnimate animation="blurInUp" by="word" duration={1.2} className="text-gray-400 text-lg max-w-2xl leading-relaxed">
+            {"A practical stack I've used to build real projects — from web apps to Android apps."}
+          </TextAnimate>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
