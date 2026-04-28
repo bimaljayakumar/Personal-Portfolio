@@ -5,40 +5,28 @@ import { TextAnimate } from "@/components/ui/text-animate";
 
 const TESTIMONIALS = [
   {
-    quote: "Bimal built our job portal from scratch in no time. Clean code, good communication, and he understood exactly what we needed. Really impressed.",
-    name: "Arjun Nair",
-    role: "HR Manager, Kochi",
-    initials: "AN",
+    quote: "Got my CarePoint hospital management system built with everything I needed — patient dashboards, doctor panels, appointment scheduling, digital prescriptions. Clean code and worked perfectly from day one.",
+    name: "Harikrishnan",
+    role: "BCA Student, Kerala",
+    initials: "HK",
   },
   {
-    quote: "He helped us build a website for our college fest. Delivered on time and the design was better than we expected. Will definitely work with him again.",
-    name: "Devika Menon",
-    role: "Student Coordinator, Thrissur",
-    initials: "DM",
+    quote: "Needed an Android weather app for my college project. Got real-time weather data, hourly forecasts, live location detection and a clean modern UI. Delivered on time, no issues at all.",
+    name: "Jinsmon",
+    role: "BCA Student, Kerala",
+    initials: "JN",
   },
   {
-    quote: "We needed a simple booking system for our car rental. Bimal got it done quickly and explained everything clearly. Very professional.",
-    name: "Suresh Pillai",
-    role: "Business Owner, Trivandrum",
-    initials: "SP",
+    quote: "My medicine reminder app turned out exactly how I imagined. Custom alarm times, push notifications, simple UI — everything worked smoothly. Really solid work.",
+    name: "Ajmal Sha",
+    role: "BCA Student, Kerala",
+    initials: "AS",
   },
   {
-    quote: "Bimal built a real estate platform for our college project. It had everything — listings, search filters, image uploads. Worked perfectly.",
-    name: "Rahul Varma",
-    role: "CS Student, Ernakulam",
-    initials: "RV",
-  },
-  {
-    quote: "He built a women safety app for our project and it was genuinely impressive. Real-time location, SOS alerts — everything worked smoothly.",
-    name: "Anjali Thomas",
-    role: "CS Student, Kozhikode",
-    initials: "AT",
-  },
-  {
-    quote: "Bimal is one of those developers who actually listens. He built exactly what we asked for and even suggested improvements we hadn't thought of.",
-    name: "Amal Krishnan",
-    role: "Startup Founder, Kochi",
-    initials: "AK",
+    quote: "The Zafe women safety web app exceeded expectations. Real-time location sharing, SOS alerts, incident reporting — all features worked perfectly. Very impressed with the final result.",
+    name: "Jayadev",
+    role: "BCA Student, Kerala",
+    initials: "JD",
   },
 ];
 

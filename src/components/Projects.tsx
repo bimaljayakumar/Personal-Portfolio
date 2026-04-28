@@ -169,9 +169,10 @@ export default function Projects() {
                         exit={{ opacity: 0, scale: 0.9 }}
                         transition={{ duration: 0.3 }}
                         viewport={{ once: true }}
-                        className={`group relative rounded-3xl overflow-hidden cursor-pointer border border-white/10 bg-white/5 backdrop-blur-md ${project.span}`}
+                        className={`group relative rounded-3xl p-[2px] animate-rainbow bg-[linear-gradient(#0a0a0a,#0a0a0a),linear-gradient(90deg,hsl(var(--color-1)),hsl(var(--color-5)),hsl(var(--color-3)),hsl(var(--color-4)),hsl(var(--color-2)))] bg-[length:200%] [background-clip:padding-box,border-box] [background-origin:border-box] cursor-pointer ${project.span}`}
                         whileHover={{ scale: 1.015 }}
                     >
+                        <div className="relative w-full h-full rounded-3xl overflow-hidden bg-white/5 backdrop-blur-md">
                         {/* Media Background */}
                         {project.mediaType === "video" ? (
                           <video
@@ -225,6 +226,7 @@ export default function Projects() {
                                     ))}
                                 </div>
                             </div>
+                        </div>
                         </div>
                     </motion.div>
                 ))}
