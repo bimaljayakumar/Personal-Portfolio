@@ -1,6 +1,11 @@
 "use client";
 
-import { useScroll, useSpring, MotionValue } from "framer-motion";
+import { useScroll, useSpring, useTransform, motion, MotionValue } from "framer-motion";
+
+function BlackFade({ scrollYProgress }: { scrollYProgress: MotionValue<number> }) {
+  const opacity = useTransform(scrollYProgress, [0, 0.2], [1, 0]);
+  return <motion.div style={{ opacity }} className="absolute inset-0 bg-black z-[5] pointer-events-none" />;
+}
 import { useEffect, useRef, ReactNode } from "react";
 
 interface ScrollyVideoProps {
@@ -61,6 +66,7 @@ export default function ScrollyVideo({ src, mobileSrc, children }: ScrollyVideoP
           {mobileSrc && <source src={mobileSrc} media="(max-width: 768px)" type="video/mp4" />}
           <source src={src} type="video/mp4" />
         </video>
+        <BlackFade scrollYProgress={springScroll} />
         {children && children(springScroll)}
       </div>
     </div>
