@@ -54,7 +54,7 @@ export default function Contact() {
               
               <div className="flex items-center gap-4">
                  <SocialLink href="https://github.com/bimaljayakumar" icon={<GithubIcon />} label="GitHub" />
-                 <SocialLink href="#" icon={<LinkedinIcon />} label="LinkedIn" />
+                 <SocialLink href="https://www.linkedin.com/in/bimal-jayakumar-059562342" icon={<LinkedinIcon />} label="LinkedIn" />
                  <SocialLink href="#" icon={<TwitterIcon />} label="Twitter" />
               </div>
             </div>
